@@ -3,7 +3,7 @@ const router = express.Router();
 
 // JS VALIDATION
 const validate = require('../../validation/validator');
-const bookingUpdateSchema = require('../../validation/schemas/bookingUpdateSchema');
+const bookingUpdateSchema = require('../../validation/schemas/booking/bookingUpdateSchema');
 
 // JWT VALIDATION
 const verifyAccesRight = require('../../middleware/verifyAccessRight');

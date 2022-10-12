@@ -3,7 +3,7 @@ const router = express.Router();
 
 // JS VALIDATION
 const validate = require('../../validation/validator');
-const userCreateSchema = require('../../validation/schemas/userCreateSchema');
+const userCreateSchema = require('../../validation/schemas/auth/userCreateSchema');
 
 // JWT VALIDATION
 const verifySignup  = require("../../middleware/verifySignup");
