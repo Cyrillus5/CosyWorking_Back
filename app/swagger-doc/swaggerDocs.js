@@ -30,7 +30,7 @@ const options = {
         // Tous les serveurs
         servers: [
             {
-                url: 'http://localhost:3000/docs',
+                url: 'https://cosyworking-api.onrender.com/api-docs/',
                 description: 'API v1'
             },
             // {

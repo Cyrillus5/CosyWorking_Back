@@ -144,3 +144,16 @@ x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJSb2x
 	"workspace_id" : 1
 }
 
+### séparateur entre deux requêtes
+
+POST {{hostname}}/workspace/search
+content-type: application/json
+
+{
+	"city": "Paris",
+   "start_date": "05.01.01",
+   "date_list": {
+   "end_date" : "06.02.02",
+   "equipment": "Imprimante"
+   }
+}

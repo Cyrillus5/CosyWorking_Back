@@ -29,29 +29,29 @@ const { string } = require("joi");
     };
 
 const equipmentExample = {
-        id: 'integer',
-        description: 'string',
-        icon_link: 'string',
+        id: 1,
+        description: 'Imprimante',
+        icon_link: 'images/equipment/3022251.png',
 
-        id: 'integer',
-        description: 'string',
-        icon_link: 'string',
+        id: 2,
+        description: 'Fibre',
+        icon_link: 'images/equipment/6131198.png',
 
-        id: 'integer',
-        description: 'string',
-        icon_link: 'string',
+        id: 3,
+        description: 'Cuisine',
+        icon_link: 'images/equipment/481486.png',
 
-        id: 'integer',
-        description: 'string',
-        icon_link: 'string',
+        id: 4,
+        description: 'Double écran',
+        icon_link: 'images/equipment/3018288.png',
 
-        id: 'integer',
-        description: 'string',
-        icon_link: 'string',
+        id: 5,
+        description: 'Enceinte',
+        icon_link: 'images/equipment/650504.png',
 
-        id: 'integer',
-        description: 'string',
-        icon_link: 'string',
+        id: 6,
+        description: 'Piscine',
+        icon_link: 'images/equipment/2932355.png',
     };
 
 module.exports = { equipmentProperties, equipmentExample };

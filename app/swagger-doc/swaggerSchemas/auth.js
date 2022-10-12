@@ -4,24 +4,24 @@ const { string } = require("joi");
 
     const signupProperties = {
         id: { type: 'integer' },
-        firstname: { type: 'string' },
         lastname: { type: 'string' },
+        firstname: { type: 'string' },
         password: { type: 'string' },
         email: { type: 'string' },
         gender: { type: 'string'},
-        role_id: { type: 'string'},
+        role_id: { type: 'integer'},
         created_at: { type: 'string' },
         updated_at: { type: 'string' }
     };
 
     const signupExample = {
-        id: 'integer',
-        first_name: 'string',
-        last_name: 'string',
-        password: 'string',
-        email: 'string',
-        gender: 'string',
-        role_id: 'string',
+        id: 50,
+        last_name: 'Guy',
+        first_name: 'Marc',
+        password: 'Password123$',
+        email: 'marc.g@gmail.com',
+        gender: 'male',
+        role_id: 1,
         created_at: 'string',
         updated_at: 'string'
     };
@@ -35,8 +35,8 @@ const { string } = require("joi");
     };
 
     const loginExample = {
-        email: 'string',
-        password: 'string'
+        email: 'marc.g@gmail.com',
+        password: 'marc.g@gmail.com'
     };
 
 module.exports = { signupProperties, signupExample, loginProperties, loginExample };

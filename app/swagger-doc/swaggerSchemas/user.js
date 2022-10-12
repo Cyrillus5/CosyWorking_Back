@@ -5,6 +5,7 @@ const { string } = require("joi");
     const userProperties = {
         id: { type: 'integer' },
         avatar: { type: 'string'},
+        last_name: {type: 'string'},
         first_name: { type: 'string'},
         username: { type: 'string'},
         about: { type: 'string'},
@@ -17,18 +18,19 @@ const { string } = require("joi");
 
 const userExample = {
       get_user: {
-        id: 'integer' ,
-        avatar: 'string',
-        first_name: 'string',
-        username: 'string',
-        about: 'string',
-        created_at: 'timestamptz',
-        role: 'string',
+        id: 50 ,
+        avatar: '/images/avatar/img.png',
+        last_name: 'Guy',
+        first_name: 'Marc',
+        username: 'Marc.G',
+        about: 'Bonjour je suis un coworker',
+        created_at: '2022-10-20 06:00:00',
+        role: 'hôte',
         workspaces: [
           {
-            workspace_id: 'integer',
-            workspace_title: 'string',
-            image_link: 'string'
+            workspace_id: 10,
+            workspace_title: 'Bureau',
+            image_link: '/images/workspace/img-05.png'
           }
         ]
       }

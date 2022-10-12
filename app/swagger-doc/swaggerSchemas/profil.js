@@ -14,15 +14,15 @@
       };
   
     const profilExample = {
-        id: 'integer',
-        last_name: 'string',
-        first_name: 'string',
-        email: 'string',
-        username: 'string',
-        avatar: 'string',
-        about: 'string',
-        gender: 'string',
-        role: 'string',
+        id: 50,
+        last_name: 'Guy',
+        first_name: 'Marc',
+        email: 'marc.g@gmail.com',
+        username: 'Marc.G',
+        avatar: '/images/avatar/img.png',
+        about: 'Bonjour je suis un coworker',
+        gender: 'male',
+        role: 'coworker',
       };
   
       //~ ------------------------------ UPDATE PROFIL
@@ -40,15 +40,15 @@
       };
   
     const updateProfilExample = {
-        id: 'integer',
-        last_name: 'string',
-        first_name: 'string',
-        email: 'string',
-        username: 'string',
-        avatar: 'string',
-        about: 'string',
-        gender: 'string',
-        role: 'string',
+        id: 50,
+        last_name: 'Guy',
+        first_name: 'Marc',
+        email: 'marc.g@gmail.com',
+        username: 'Marc',
+        avatar: '/images/avatar/img-02.png',
+        about: 'Bonjour je suis un hôte',
+        gender: 'male',
+        role: 'hôte',
       };
   
-module.exports = { profilProperties, profilExample, updateProfilProperties, updateProfilProperties };
+module.exports = { profilProperties, profilExample, updateProfilProperties, updateProfilExample };
