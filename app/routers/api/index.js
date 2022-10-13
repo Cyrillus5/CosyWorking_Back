@@ -18,9 +18,6 @@ const workspaceRouter = require('./workspace');
 const equipmentRouter = require('./equipment');
 const imageRouter = require('./image');
 
-// Default prefixing API's route,
-router.all('/', apiController.home);
-
 // Gives acces to x-access-token in header
 router.use(giveAccessToken);
 
