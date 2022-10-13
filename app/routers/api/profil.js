@@ -1,6 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
+
+// JS VALIDATION
+const validate = require('../../validation/validator');
+const profilUpdateSchema = require('../../validation/schemas/profil/profilUpdateSchema');
+
 // JWT VALIDATION
 const verifyAccesRight = require('../../middleware/verifyAccessRight');
 
@@ -15,7 +20,7 @@ const { profilController } = require("../../controllers/api");
 router.get("/personalspace/:id(\\d+)/profil",[verifyAccesRight.verifyToken, verifyAccesRight.isAuthenticate], controllerHandler(profilController.findPersonalspaceById));
 
 //~ ---------- PATCH
-router.patch("/personalspace/:id(\\d+)/profil",[verifyAccesRight.verifyToken, verifyAccesRight.isAuthenticate], controllerHandler(profilController.updatePersonalspace));
+router.patch("/personalspace/:id(\\d+)/profil",[validate('body', profilUpdateSchema), verifyAccesRight.verifyToken, verifyAccesRight.isAuthenticate], controllerHandler(profilController.updatePersonalspace));
 
 //~ ---------- DELETE
 // router.delete("/personalspace/:id(\\d+)/profil", controllerHandler());

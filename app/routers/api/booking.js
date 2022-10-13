@@ -27,7 +27,7 @@ router.get("/personalspace/:hostid(\\d+)/booking", [verifyAccesRight.verifyToken
 router.post("/booking/request",[verifyAccesRight.verifyToken, verifyAccesRight.isAuthenticate] ,controllerHandler(bookingController.bookingRequest));
 
 //~ ---------- PATCH
-router.patch("/booking/:id(\\d+)/state",[verifyAccesRight.verifyToken, verifyAccesRight.isAuthenticate,validate('body', bookingUpdateSchema)], controllerHandler(bookingController.stateUpdate));
+router.patch("/booking/:id(\\d+)/state",[verifyAccesRight.verifyToken, verifyAccesRight.isAuthenticate, validate('body', bookingUpdateSchema)], controllerHandler(bookingController.stateUpdate));
 
 
 module.exports = router;
